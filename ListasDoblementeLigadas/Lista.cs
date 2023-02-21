@@ -31,5 +31,17 @@ namespace ListasDoblementeLigadas
             arriba = null;
             abajo = null;
         }
+
+        public void RecorrerLista()
+        {
+            Nodo actual = arriba;
+            while(actual != null)
+            {
+                Console.WriteLine(actual.datos + " ");
+                actual = actual.siguiente;
+            }
+            Console.WriteLine();
+        }
+
     }
 }
