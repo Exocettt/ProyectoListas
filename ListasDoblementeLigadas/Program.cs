@@ -16,6 +16,7 @@ namespace ListasDoblementeLigadas
             lista.AgregarInicio("Tres");
             lista.AgregarInicio("Dos");
             lista.AgregarInicio("Uno");
+            lista.AgregarFinal("Cuatro");
 
             lista.RecorrerLista();
 

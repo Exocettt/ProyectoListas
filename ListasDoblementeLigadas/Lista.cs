@@ -71,6 +71,24 @@ namespace ListasDoblementeLigadas
                 arriba = nuevoNodo;
             }
         }
+
+        public void AgregarFinal(string datos)
+        {
+            Nodo nuevoNodo = new Nodo(datos);
+
+            if(arriba == null)
+            {
+                arriba = nuevoNodo;
+                abajo = nuevoNodo;
+            }
+            else
+            {
+                nuevoNodo.previo = abajo;
+                abajo.siguiente = nuevoNodo;
+                abajo = nuevoNodo;
+            }
+        }
+
         public void EliminarNodo(string datos)
         {
             if (ValidaVacio())
