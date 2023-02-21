@@ -58,6 +58,38 @@ namespace ListasDoblementeLigadas
                 arriba = nuevoNodo;
             }
         }
+        public void EliminarNodo(int datos)
+        {
+            Nodo actual = arriba;
+
+            while (actual != null && actual.datos != datos)
+            {
+                actual = actual.siguiente;
+            }
+            if (actual == null)
+            {
+                Console.WriteLine("El nodo {0} no se encontró en la lista", datos);
+                return;
+            }
+
+            if (actual.previo == null)
+            {
+                arriba = actual.siguiente;
+            }
+            else
+            {
+                actual.previo.siguiente = actual.siguiente;
+            }
+
+            if (actual.siguiente == null)
+            {
+                abajo = actual.previo;
+            }
+            else
+            {
+                actual.siguiente.previo = actual.previo;
+            }
+        }
 
     }
 }
