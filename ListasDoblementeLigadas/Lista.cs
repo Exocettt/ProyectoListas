@@ -18,12 +18,9 @@ namespace ListasDoblementeLigadas
             abajo = null;
         }
 
-        public void ValidaVacio()
+        public bool ValidaVacio()
         {
-           if(arriba==null)
-            {
-                Console.WriteLine("La lista esta vacia");
-            }   
+            return arriba == null;
         }
 
         public void vaciarLista()
@@ -60,6 +57,11 @@ namespace ListasDoblementeLigadas
         }
         public void EliminarNodo(int datos)
         {
+            if (ValidaVacio())
+            {
+                Console.WriteLine("La lista esta vacia");
+                return;
+            }
             Nodo actual = arriba;
 
             while (actual != null && actual.datos != datos)
