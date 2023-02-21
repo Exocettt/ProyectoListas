@@ -43,5 +43,21 @@ namespace ListasDoblementeLigadas
             Console.WriteLine();
         }
 
+        public void AgregarInicio(int datos)
+        {
+            Nodo nuevoNodo = new Nodo(datos);
+            if (arriba == null)
+            {
+                arriba = nuevoNodo;
+                abajo = nuevoNodo;
+            }
+            else
+            {
+                nuevoNodo.siguiente = arriba;
+                arriba.previo = nuevoNodo;
+                arriba = nuevoNodo;
+            }
+        }
+
     }
 }
