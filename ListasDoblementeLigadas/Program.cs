@@ -10,6 +10,14 @@ namespace ListasDoblementeLigadas
     {
         static void Main(string[] args)
         {
+            Lista lista= new Lista();
+
+            lista.AgregarInicio("Uno");
+            lista.AgregarInicio("Dos");
+            lista.AgregarInicio("Tres");
+
+            lista.RecorrerLista();
+
         }
     }
 }

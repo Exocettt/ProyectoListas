@@ -8,11 +8,11 @@ namespace ListasDoblementeLigadas
 {
     internal class Nodo
     {
-        public int datos;
+        public string datos;
         public Nodo previo;
         public Nodo siguiente;
 
-        public Nodo(int d)
+        public Nodo(string d)
         {
             datos = d;
             previo = null;

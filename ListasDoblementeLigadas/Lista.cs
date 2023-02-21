@@ -40,7 +40,7 @@ namespace ListasDoblementeLigadas
             Console.WriteLine();
         }
 
-        public void AgregarInicio(int datos)
+        public void AgregarInicio(string datos)
         {
             Nodo nuevoNodo = new Nodo(datos);
             if (arriba == null)
@@ -55,7 +55,7 @@ namespace ListasDoblementeLigadas
                 arriba = nuevoNodo;
             }
         }
-        public void EliminarNodo(int datos)
+        public void EliminarNodo(string datos)
         {
             if (ValidaVacio())
             {
