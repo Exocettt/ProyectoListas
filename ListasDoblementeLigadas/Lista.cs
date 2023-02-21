@@ -18,7 +18,7 @@ namespace ListasDoblementeLigadas
             abajo = null;
         }
 
-        public bool ValidaVacio()
+        public void ValidaVacio()
         {
            if(arriba==null)
             {
