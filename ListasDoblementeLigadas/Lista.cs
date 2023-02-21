@@ -29,6 +29,22 @@ namespace ListasDoblementeLigadas
             abajo = null;
         }
 
+        public int Indice(String datos)
+        {
+            int Indice = 0;
+            Nodo actual = arriba;
+            while (actual != null)
+            {
+                if (actual.datos == datos)
+                {
+                    return Indice;
+                }
+                actual = actual.siguiente;
+                Indice++;
+            }
+            return -1;
+        }
+
         public void RecorrerLista()
         {
             Nodo actual = arriba;
