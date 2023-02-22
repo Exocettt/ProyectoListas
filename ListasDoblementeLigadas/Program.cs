@@ -46,10 +46,15 @@ namespace ListasDoblementeLigadas
 
             Console.WriteLine("");
 
-            Console.WriteLine("Nodo anterior al Dos: ");
+            Console.WriteLine("Buscador del anterior nodo del 'Dos' ");
             Nodo nodoT = lista.Buscar("Dos");
             lista.NodoPrevio(nodoT);
-            
+
+            Console.WriteLine("");
+
+            Console.WriteLine("Buscador del nodo siguiente del 'Dos' ");
+            Nodo nodoS = lista.Buscar("Dos");
+            lista.NodoSiguiente(nodoS);
 
             Console.WriteLine("");
 

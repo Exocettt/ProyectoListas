@@ -73,6 +73,17 @@ namespace ListasDoblementeLigadas
             }
         }
 
+        public void NodoSiguiente(Nodo nodo)
+        {
+            if (nodo == null || nodo.siguiente == null)
+            {
+                Console.WriteLine("El nodo no tiene nodo siguiente");
+            }
+            else
+            {
+                Console.WriteLine("El nodo siguiente es: " + nodo.siguiente.datos);
+            }
+        }
 
         public void RecorrerLista()
         {
