@@ -61,6 +61,19 @@ namespace ListasDoblementeLigadas
             return null;
         }
 
+        public void NodoPrevio(Nodo nodo)
+        {
+            if (nodo == null || nodo.previo == null)
+            {
+                Console.WriteLine("El nodo no tiene nodo anterior");
+            }
+            else
+            {
+                Console.WriteLine("El nodo anterior es: " + nodo.previo.datos);
+            }
+        }
+
+
         public void RecorrerLista()
         {
             Nodo actual = arriba;

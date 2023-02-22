@@ -44,6 +44,14 @@ namespace ListasDoblementeLigadas
                 Console.WriteLine("No encontrado!");
             }
 
+            Console.WriteLine("");
+
+            Console.WriteLine("Nodo anterior al Dos: ");
+            Nodo nodoT = lista.Buscar("Dos");
+            lista.NodoPrevio(nodoT);
+            
+
+            Console.WriteLine("");
 
             lista.EliminarNodo("Dos");  
             Console.WriteLine("");
