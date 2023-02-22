@@ -45,6 +45,22 @@ namespace ListasDoblementeLigadas
             return -1;
         }
 
+        public Nodo Buscar(string datos)
+        {
+            Nodo actual = arriba;
+
+            while (actual != null)
+            {
+                if(actual.datos == datos)
+                {
+                    return actual;
+                }
+                actual = actual.siguiente;
+            }
+
+            return null;
+        }
+
         public void RecorrerLista()
         {
             Nodo actual = arriba;

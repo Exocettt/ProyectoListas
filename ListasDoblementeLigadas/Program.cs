@@ -16,21 +16,33 @@ namespace ListasDoblementeLigadas
             lista.AgregarInicio("Tres");
             lista.AgregarInicio("Dos");
             lista.AgregarInicio("Uno");
+
             lista.AgregarFinal("Cuatro");
 
             lista.RecorrerLista();
 
-            Console.WriteLine("Buscar el indice 1: ");
-            int indice = lista.Indice("Uno");
+            Console.WriteLine("Buscar el indice 3: ");
+            int indice = lista.Indice("Tres");
             if(indice != -1)
             {
-                Console.WriteLine("El nodo 'Uno' se encuentra en el Indice {0}", indice);
+                Console.WriteLine("El nodo 'Tres' se encuentra en el Indice {0}", indice);
             }
             else
             {
-                Console.WriteLine("El nodo 'Uno' no se encontro en la lista");
+                Console.WriteLine("El nodo 'Tres' no se encontro en la lista");
             }
 
+            Console.WriteLine("");
+            Console.WriteLine("Buscar el Nodo Dos: ");
+            Nodo actual = lista.Buscar("Dos");
+            if (actual != null)
+            {
+                Console.WriteLine(actual.datos);
+            }
+            else
+            {
+                Console.WriteLine("No encontrado!");
+            }
 
 
             lista.EliminarNodo("Dos");
