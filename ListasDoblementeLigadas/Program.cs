@@ -21,7 +21,7 @@ namespace ListasDoblementeLigadas
 
             lista.RecorrerLista();
 
-            Console.WriteLine("Buscar el indice 3: ");
+            Console.WriteLine("Buscar el indice 2: ");
             int indice = lista.Indice("Tres");
             if(indice != -1)
             {
@@ -45,7 +45,7 @@ namespace ListasDoblementeLigadas
             }
 
 
-            lista.EliminarNodo("Dos");
+            lista.EliminarNodo("Dos");  
             Console.WriteLine("");
             lista.RecorrerLista();
  
