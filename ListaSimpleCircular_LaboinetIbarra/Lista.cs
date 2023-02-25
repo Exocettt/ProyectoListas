@@ -40,5 +40,25 @@ namespace ListaSimpleCircular_LaboinetIbarra
             }
 
         }
+        public void DespliegueLista()
+        {
+            Nodo desp = new Nodo();
+            desp = nodoInicial;
+            if (desp != null)
+            {
+                //Recorrido de lista
+                do
+                {
+                    Console.WriteLine("DATOS EN LISTA :" + desp.dato);
+                    desp = desp.Siguiente;
+
+                } while (desp != nodoInicial);
+            }
+            else
+            {
+                Console.WriteLine("La lista esta vacia");
+            }
+
+        }
     }
 }
