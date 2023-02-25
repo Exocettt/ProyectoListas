@@ -8,5 +8,13 @@ namespace ListaSimpleCircular_LaboinetIbarra
 {
     internal class Nodo
     {
+        public Nodo Siguiente;
+        public String dato;
+
+        public Nodo(String dat = "", Nodo siguiente = null)
+        {
+            dato = dat;
+            Siguiente = siguiente;
+        }
     }
 }
