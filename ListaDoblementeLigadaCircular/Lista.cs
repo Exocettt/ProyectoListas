@@ -106,6 +106,29 @@ namespace ListaDoblementeLigadaCircular
                 Count--;
             }
 
+            public DoublyLinkedListNode<T> EncontrarNodo(T datos)
+            {
+                if (Count == 0)
+                {
+                    return null;
+                }
+
+                var currentNode = sig;
+
+                do
+                {
+                    if (currentNode.Datos.Equals(datos))
+                    {
+                        datos = currentNode.Datos;
+                        Console.WriteLine(datos);
+                    }
+
+                    currentNode = currentNode.siguiente;
+                }
+                while (currentNode != sig);
+
+                return null;
+            }
 
         }
 
