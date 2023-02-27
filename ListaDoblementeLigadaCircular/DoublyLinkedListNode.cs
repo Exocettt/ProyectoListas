@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ListaDoblementeLigadaCircular
 {
-    internal class DoublyLinkedListNode
+    public class DoublyLinkedListNode<T>
     {
     }
 }

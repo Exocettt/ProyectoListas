@@ -130,6 +130,22 @@ namespace ListaDoblementeLigadaCircular
                 return null;
             }
 
+            public void Recorrer()
+            {
+                if (Count == 0)
+                {
+                    Console.WriteLine("La lista esta vacia.");
+                    return;
+                }
+
+                var currentNode = sig;
+
+                do
+                {
+                    Console.WriteLine(currentNode.Datos);
+                    currentNode = currentNode.siguiente;
+                } while (currentNode != sig);
+            }
         }
 
     }
