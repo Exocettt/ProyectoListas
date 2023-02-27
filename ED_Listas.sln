@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListasDoblementeLigadas", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListaSimpleCircular_LaboinetIbarra", "ListaSimpleCircular_LaboinetIbarra\ListaSimpleCircular_LaboinetIbarra.csproj", "{FFFA5019-CC85-4C4E-A433-AFBB9D450C29}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListaDoblementeLigadaCircular", "ListaDoblementeLigadaCircular\ListaDoblementeLigadaCircular.csproj", "{0877EA25-81FB-4462-B975-8889F87FBDB8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{FFFA5019-CC85-4C4E-A433-AFBB9D450C29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFFA5019-CC85-4C4E-A433-AFBB9D450C29}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFFA5019-CC85-4C4E-A433-AFBB9D450C29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0877EA25-81FB-4462-B975-8889F87FBDB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0877EA25-81FB-4462-B975-8889F87FBDB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0877EA25-81FB-4462-B975-8889F87FBDB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0877EA25-81FB-4462-B975-8889F87FBDB8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
