@@ -60,6 +60,30 @@ namespace ListaDoblementeLigadaCircular
 
                 Count++;
             }
+
+
+            public void EliminarInicio()
+            {
+                if (Count == 0)
+                {
+                    throw new InvalidOperationException("La lista esta vacia.");
+                }
+
+                if (Count == 1)
+                {
+                    sig = null;
+                    ant = null;
+                }
+                else
+                {
+                    sig = sig.siguiente;
+                    sig.anterior = ant;
+                    ant.siguiente = sig;
+                }
+
+                Count--;
+            }
+
         }
 
     }
