@@ -38,7 +38,29 @@ namespace ListaDoblementeLigadaCircular
 
                 Count++;
             }
+            public void AgregarFinal(T datos)
+            {
+                var newNode = new ListaDobleCircular<T>(datos);
+
+                if (Count == 0)
+                {
+                    sig = newNode;
+                    ant = newNode;
+                    sig.siguiente = ant;
+                    ant.anterior = sig;
+                }
+                else
+                {
+                    newNode.anterior = ant;
+                    ant.siguiente = newNode;
+                    ant = newNode;
+                    sig.anterior = ant;
+                    ant.siguiente = sig;
+                }
+
+                Count++;
+            }
         }
 
-       }
+    }
 }
