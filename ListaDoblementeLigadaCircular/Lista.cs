@@ -84,6 +84,29 @@ namespace ListaDoblementeLigadaCircular
                 Count--;
             }
 
+            public void EliminarFinal()
+            {
+                if (Count == 0)
+                {
+                    throw new InvalidOperationException("La lista esta vacia.");
+                }
+
+                if (Count == 1)
+                {
+                    sig = null;
+                    ant = null;
+                }
+                else
+                {
+                    ant = ant.anterior;
+                    ant.siguiente = sig;
+                    sig.anterior = ant;
+                }
+
+                Count--;
+            }
+
+
         }
 
     }
